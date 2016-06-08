@@ -1,0 +1,39 @@
+
+f7eaf01 * master origin/master origin/HEAD test commit with new user info
+0df37cd * Test change
+689f13b * Update README
+4346be0 * add note
+43758a3 * Edited README via GitHub
+21da379 * add a note to README
+9ac3493 * first commit
+
+commit f7eaf01f65e3258daeef032a2e3d520e02dabde6
+Author: Quan Ta <quan.ta@lin-digital.com>
+Date:   Fri Oct 10 16:11:17 2014 -0700
+
+    test commit with new user info
+
+commit 0df37cd96379e3775f8d52eca9d3363c7eb3d635
+Author: Quan Ta <quan.ta@lin-digital.com>
+Date:   Fri Oct 10 16:03:16 2014 -0700
+
+    Test change
+
+commit 689f13b94331b21f5913955bdb178221b63fb57c
+Author: Cute Nix <andrew.j.fn@gmail.com>
+Date:   Sun Feb 17 19:08:37 2013 -0800
+
+    Update README
+
+commit 4346be065a67c34197544b3dbd66ea144bd9b514
+Author: Cute Nix <andrew.j.fn@gmail.com>
+Date:   Fri Feb 24 18:31:53 2012 -0800
+
+    add note
+
+commit 43758a3bb13d850ecb448608c921da480a8622b0
+Author: Cute Nix <andrew.j.fn@gmail.com>
+Date:   Tue Sep 27 14:01:30 2011 -0700
+
+    Edited README via GitHub
+
