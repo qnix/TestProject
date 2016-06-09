@@ -8,7 +8,7 @@ case class Bar() {
   println("this is Bar")
 }
 
-object Hello {
+object Hello extends App {
   def main(args: Array[String]) {
     println(">>>> Hello")
 
