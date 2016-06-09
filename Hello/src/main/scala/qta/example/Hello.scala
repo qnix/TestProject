@@ -8,6 +8,10 @@ case class Bar() {
   println("this is Bar")
 }
 
+case class Baz(message: String) {
+  println("This is Baz")
+}
+
 object Hello extends App {
   def main(args: Array[String]) {
     println(">>>> Hello")
@@ -17,5 +21,7 @@ object Hello extends App {
 
     val c = Bar
     val x = c()
+
+    val z = Baz("Message is required")
   }
 }
