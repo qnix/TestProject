@@ -1,7 +1,7 @@
 package qta.example
 
-object Hello {
-  def main(args: Array[String]) {
-    println(">>>> Hello")
+object Hello extends App {
+  override def main(args: Array[String]) {
+    println(">>>> Hello, World!")
   }
 }
