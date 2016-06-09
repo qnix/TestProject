@@ -13,7 +13,7 @@ case class Baz(message: String) {
 }
 
 object Hello extends App {
-  def main(args: Array[String]) {
+  override def main(args: Array[String]) {
     println(">>>> Hello")
 
     val f = Foo("Test Foo")
