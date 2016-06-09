@@ -1,7 +1,13 @@
 package qta.example
 
-object Hello extends App {
-  override def main(args: Array[String]) {
-    println(">>>> Hello, World!")
+case class Foo(value: String) {
+  println(s"Foo with value: ${value}")
+}
+
+object Hello {
+  def main(args: Array[String]) {
+    println(">>>> Hello")
+
+    val f = Foo("Test Foo")
   }
 }
