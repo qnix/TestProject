@@ -5,10 +5,10 @@ import org.scalatest.Matchers
 import scala.collection.mutable.Stack
 
 abstract class UnitFlatSpec extends FlatSpec
-    with Matchers with OptionValues with Inside with Inspectors
+  with Matchers with OptionValues with Inside with Inspectors
 
 abstract class UnitFreeSpec extends FreeSpec
-    with Matchers with OptionValues with Inside with Inspectors
+  with Matchers with OptionValues with Inside with Inspectors
 
 class FooFlatTest extends UnitFlatSpec {
   "A Stack" should "pop values in last-in-first-out order" in {
@@ -35,8 +35,8 @@ class FooTest extends UnitFreeSpec {
   "Class Foo" - {
     "Should have some test" in {
       val foo = Foo("Hello", 1)
-      foo.value shouldEqual("Hello")
-      foo.count shouldEqual(1)
+      foo.value shouldEqual ("Hello")
+      foo.count shouldEqual (1)
     }
   }
 }
