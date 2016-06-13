@@ -2,10 +2,36 @@ package qta.example
 
 import org.scalatest._
 import org.scalatest.Matchers
+import scala.collection.mutable.Stack
 
-abstract class UnitSpec extends FreeSpec with Matchers with OptionValues with Inside with Inspectors
+abstract class UnitFlatSpec extends FlatSpec
+    with Matchers with OptionValues with Inside with Inspectors
 
-class FooTest extends FreeSpec with Matchers {
+abstract class UnitFreeSpec extends FreeSpec
+    with Matchers with OptionValues with Inside with Inspectors
+
+class FooFlatTest extends UnitFlatSpec {
+  "A Stack" should "pop values in last-in-first-out order" in {
+    val stack = new Stack[Int]
+    stack.push(1)
+    stack.push(2)
+    assert(stack.pop() === 2)
+    assert(stack.pop() === 1)
+  }
+  it should "throw NoSuchElementException if an empty stack is popped" in {
+    val emptyStack = new Stack[String]
+    intercept[NoSuchElementException] {
+      emptyStack.pop()
+    }
+  }
+  it should "also be able to do other arbitrary things" in {
+    val a = 5
+    val b = 2
+    assertResult(3)(a - b)
+  }
+}
+
+class FooTest extends UnitFreeSpec {
   "Class Foo" - {
     "Should have some test" in {
       val foo = Foo("Hello", 1)
