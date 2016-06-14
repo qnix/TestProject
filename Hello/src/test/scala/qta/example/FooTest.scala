@@ -35,8 +35,8 @@ class FooTest extends UnitFreeSpec {
   "Class Foo" - {
     "Should have some test" in {
       val foo = Foo("Hello", 1)
-      foo.value shouldEqual("Hello")
-      foo.count shouldEqual(1)
+      foo.value shouldEqual ("Hello")
+      foo.count shouldEqual (1)
     }
   }
 }
